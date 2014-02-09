@@ -16,7 +16,7 @@ $(function(){
 function count(){
    var date = new Date();
    var ctime = Date.parse(date)
-   var remain = (limit-ctime)/1000;
+   var remain = Math.floor((limit-ctime)/1000);
    var day = Math.floor(remain/60/60/24);
    var rday = remain-day*60*60*24;
    var hour = Math.floor(rday/60/60);
